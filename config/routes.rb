@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+  root 'chapters#index'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
   resources :sections, only: [:new, :create, :index, :destroy]
   resources :chapters, only: [:index]
-  root 'chapters#index'
-  default_url_options :host => "http://etextbook.herokuapp.com"
+    default_url_options :host => "http://etextbook.herokuapp.com"
 end
