@@ -1,24 +1,5 @@
 # README
+First, you must have have PDF files to upload, then simply navigate to http://yourdomain.com/admin/ and create a new chapter by clicking on "Chapters" in the admin navigation panel.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Within the chapter creation page, you will be able to add an unlimited amount of sections each with their own PDF file.
+Content will be displayed on home page with clean styling and some CSS animations.
