@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resources :sections, only: [:new, :create, :index, :destroy]
   resources :chapters, only: [:index]
   root 'chapters#index'
-  default_url_options :host => "http://etextbook.herokuapp.co
+  default_url_options :host => "http://etextbook.herokuapp.com"
 end
