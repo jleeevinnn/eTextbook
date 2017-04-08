@@ -1,6 +1,6 @@
 class SectionsController < ApplicationController
 	def index
-		@sections = Section.order('created_at DESC')
+		@sections = Section.order(:id)
 	end
 
 	def new
