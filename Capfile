@@ -5,7 +5,9 @@ require 'capistrano/setup'
 require 'capistrano/deploy'
 require 'capistrano/rails'
 require 'capistrano/passenger'
-
+require "capistrano/bundler"
+require "capistrano/rails/assets"
+require "capistrano/rails/migrations"
 # If you are using rbenv add these lines:
 # require 'capistrano/rbenv'
 set :rbenv_type, :user
