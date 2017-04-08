@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   devise_for :users
   resources :sections, only: [:new, :create, :index, :destroy]
   resources :chapters, only: [:index]
-  default_url_options :host => "http://etextbook.herokuapp.com"
+  default_url_options :host => "localhost:3000"
 end
