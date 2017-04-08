@@ -5,7 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 gem 'rails', '~> 5.0.2'
 gem 'sqlite3'
 gem 'puma', '~> 3.0'
@@ -20,12 +19,6 @@ gem 'paperclip'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'active_skin'
 gem 'bootstrap-sass', '~> 3.3.6'
-gem 'capistrano', '~> 3.7', '>= 3.7.1'
-gem 'capistrano-bundler' # for capistrano/bundler
-gem 'capistrano-rails' # for capistrano/rails/*
-
-# Add this if you're using rbenv
- gem 'capistrano-rbenv'
 
 group :development, :test do
   gem 'byebug', platform: :mri
