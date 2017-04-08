@@ -13,33 +13,3 @@
 </div>
 <%}%>
 </div>
-
-    <script>
-function toggle(sectionId) {
-	var sectionDescriptions = document.getElementsByClassName("desc");
-	var sectionElements = document.getElementsByClassName("list-group-item")
-		for (var i = 0; i < sectionDescriptions.length; i++) {
-			if (sectionId != i+1) {
-				sectionDescriptions[i].style.opacity = "0";
-				sectionDescriptions[i].style.maxHeight = "0";
-			}
-		}
-		for (var i = 0; i < sectionElements.length; i++) {
-			if (sectionId != i+1) {
-				sectionElements[i].className = "list-group-item list-group-item-action flex-column";
-			}
-		}
-	var sectionTitleString = "title" + sectionId;
-	var sectionElement = "section" + sectionId;
-	if (document.getElementById(sectionId).style.opacity != '1') {
-		/* Toggle currently clicked description */
-		document.getElementById(sectionElement).className += " active";
-    	document.getElementById(sectionId).style.maxHeight = "200px";
-    	document.getElementById(sectionId).style.opacity = '1';
-	} else { /* Hide extra div */
-		document.getElementById(sectionId).style.maxHeight = "0px";
-		document.getElementById(sectionId).style.opacity = '0';
-		document.getElementById(sectionElement).className = "list-group-item list-group-item-action flex-column";
-	}	
-}
-</script>
