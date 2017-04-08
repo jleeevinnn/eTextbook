@@ -1,0 +1,15 @@
+
+<h1 style="margin-top:15px; margin-bottom:15px;"><%=chapter.title%></h1>
+
+<div class="list-group">
+<%chapter.sections.each { |section| %>
+<div class="list-group-item list-group-item-action flex-column" id="section<%=section.id%>">
+    <div class="d-flex w-100 justify-content-between">
+		<a onclick="toggle(<%=section.id%>)"><h4 class="mb-4 section-title" id="title<%=section.id%>"><%=section.title%></h4></a>
+
+    </div>
+	<p class="mb-5 desc" id="<%=section.id%>"><%=section.description%></br><a href="../sections/<%=section.id%>">View PDF</a></p>
+
+</div>
+<%}%>
+</div>
